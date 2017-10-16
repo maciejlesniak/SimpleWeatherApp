@@ -26,6 +26,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pl.sparkidea.simpleweatherapp.activities.CurrentWeatherActivity" />
         </activity>
+        <activity
+            android:name=".WeatherStationInfoActivity"
+            android:label="@string/title_activity_weather_station_info"
+            android:parentActivityName=".activities.CurrentWeatherActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.sparkidea.simpleweatherapp.activities.CurrentWeatherActivity" />
+        </activity>
     </application>
 
 </manifest>

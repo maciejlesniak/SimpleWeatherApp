@@ -83,7 +83,9 @@
         android:text="@string/see_all_week_worecast"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/realTempText" />
+        app:layout_constraintTop_toBottomOf="@+id/realTempText"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <Button
         android:id="@+id/buttonSettings"
@@ -92,8 +94,25 @@
         android:layout_marginTop="5dp"
         android:text="@string/buttons_settings"
         app:layout_constraintTop_toBottomOf="@+id/buttonSeeAllWeek"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="7dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onClick_weatherStationInfo"
+        android:text="@string/button_stationInfo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonSettings"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSeeAllWeek" />
 
 
 </android.support.constraint.ConstraintLayout>

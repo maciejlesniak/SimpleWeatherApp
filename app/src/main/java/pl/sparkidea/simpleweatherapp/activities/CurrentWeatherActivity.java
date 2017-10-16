@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import pl.sparkidea.simpleweatherapp.R;
+import pl.sparkidea.simpleweatherapp.WeatherStationInfoActivity;
 import pl.sparkidea.simpleweatherapp.activities.childs.AllWeekWeatherActivity;
 import pl.sparkidea.simpleweatherapp.activities.childs.SettingsActivity;
 import pl.sparkidea.simpleweatherapp.service.RetrieveCurrentWeatherData;
@@ -56,5 +57,9 @@ public class CurrentWeatherActivity extends AppCompatActivity {
 
         new RetrieveCurrentWeatherData(this, prefLocation).execute();
 
+    }
+
+    public void onClick_weatherStationInfo(View view) {
+        startActivity(new Intent(this, WeatherStationInfoActivity.class));
     }
 }
